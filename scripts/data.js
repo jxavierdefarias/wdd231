@@ -1,0 +1,2 @@
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = `Última Modificação: ${new Date(document.lastModified).toLocaleString('pt-BR')}`;
