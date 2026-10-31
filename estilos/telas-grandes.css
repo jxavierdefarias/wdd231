@@ -1,0 +1,20 @@
+@media (min-width: 32.5rem) {
+  #menu { display: none; }
+
+  .navegacao {
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .navegacao li { margin-left: 1rem; }
+
+  #cursos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h1 {
+    color: #1d4d72;
+  }
+}
