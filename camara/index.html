@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>São Paulo Câmara de Comércio</title>
+  <meta name="description" content="Câmara de Comércio de São paulo - Conectando empresas, eventos e oportunidades.">
+  <link rel="stylesheet" href="estilos/chamber.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="Logo Sao Paulo">
+      <div><h1>São Paulo</h1><p>Câmara de Comércio</p></div>
+    </div>
+    <button id="menuButton" aria-label="Abrir menu">☰</button>
+    <nav id="menuItems">
+      <a href="index.html" class="active">Início</a>
+      <a href="diretorio.html">Diretório</a>
+      <a href="join.html">Associar-se</a>
+      <a href="discover.html">Descobrir</a>
+      <button id="darkBtn" aria-label="Modo escuro">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img src="images/hero-sao-paulo.webp" alt="Cidade de São Paulo, Brasil">
+      <a href="join.html" class="cta">Inscreva-se / Ingressos Palestra</a>
+    </section>
+
+    <h2 class="page-title">Início</h2>
+
+    <!-- EVENTOS + CLIMA -->
+    <section class="info-grid">
+      <div class="card">
+        <h3>Eventos</h3>
+        <div class="card-body">
+          <h4>Feira de Negócios de São Paulo</h4>
+          <p>📅 Sábado, 15 de Novembro - 10h<br>
+          📍 Itaim Bibi - Av.Faria Lima<br>
+          Venha conhecer empresas locais, gastronomia e artesanato.</p>
+          <a href="#">Ver todos os eventos →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Clima Atual</h3>
+        <div class="card-body weather">
+          <img id="weatherIcon" src="images/sun.svg" alt="Clima">
+          <div>
+            <p class="temp"><span id="temp">22°</span> C</p>
+            <p id="desc">Parcialmente Nublado</p>
+            <p>Máxima: <span id="max">24°C</span></p>
+            <p>Mínima: <span id="min">19°C</span></p>
+            <p>Umidade: <span id="humidity">34%</span></p>
+            <p>Nascer do Sol: <span>7:30</span></p>
+            <p>Pôr do Sol: <span>20:59</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Previsão de Clima</h3>
+        <div class="card-body forecast">
+          <p>Hoje: <strong>32°C</strong></p>
+          <p>Quarta-feira: <strong>31°C</strong></p>
+          <p>Sexta-feira: <strong>18°C</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMPRESAS DESTAQUE - vem do members.json via JS -->
+    <section id="spotlights" class="spotlights"></section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Câmara de Comércio de São Paulo</strong><br>
+       Av.Faria lima <br>
+      Sao Paulo, Brasil 999<br>
+      info@timbuktucc.org<br>
+      (223) 555-2300
+    </div>
+    <div class="social">
+      <a href="#">▶️</a><a href="#">𝕏</a><a href="#">in</a>
+    </div>
+    <div>
+      Projeto de Aula WDD231<br>
+      Jorge Farias © <span id="year"></span> São Paulo Câmara de Comércio<br>
+      Última Modificação: <span id="lastModified"></span>
+    </div>
+  </footer>
+
+  <script src="scripts/chamber.js"></script>
+</body>
+</html>

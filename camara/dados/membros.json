@@ -1,0 +1,7 @@
+{
+  "members": [
+    {"name":"Empresa do Deserto","tagline":"Turismo e Aventura","email":"info@gmail.com","phone":"55 71 1234 5678","website":"minhaempresa.com","image":"empresa1.webp","membership":3},
+    {"name":"Café de Timbuktu","tagline":"Café e Gastronomia","email":"contato@cafe.com","phone":"55 71 9876 5432","website":"cafetimbuktu.com","image":"empresa2.webp","membership":2},
+    {"name":"Artesanato Mali","tagline":"Arte Local","email":"ola@artesanato.com","phone":"55 71 1111 2222","website":"artesanatomali.com","image":"empresa3.webp","membership":3}
+  ]
+}
