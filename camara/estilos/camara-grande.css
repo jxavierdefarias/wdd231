@@ -1,0 +1,19 @@
+@media (min-width: 700px) {
+  header {
+    padding: 15px 40px;
+  }
+
+  #menuItems {
+    display: flex;
+    gap: 30px;
+  }
+
+  #directory.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
