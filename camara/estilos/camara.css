@@ -49,25 +49,7 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
   .info-grid,.spotlights,footer{grid-template-columns:1fr}
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #1a365d;
-  color: #fff;
-  padding: 12px 20px;
-  position: relative;
-}
 
-#menuButton {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  z-index: 100;
-}
 
 #menuItems { display: flex; gap: 20px; }
 #menuItems a { color: #fff; text-decoration: none; font-weight: 600; }
