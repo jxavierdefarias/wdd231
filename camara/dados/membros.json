@@ -1,7 +1,17 @@
 {
   "members": [
-    {"name":"Empresa do Deserto","tagline":"Turismo e Aventura","email":"info@gmail.com","phone":"55 71 1234 5678","website":"minhaempresa.com","image":"empresa1.webp","membership":3},
-    {"name":"Café de São Paulo","tagline":"Café e Gastronomia","email":"contato@cafe.com","phone":"55 71 9876 5432","website":"cafetimbuktu.com","image":"empresa2.webp","membership":2},
-    {"name":"Artesanato Mali","tagline":"Arte Local","email":"ola@artesanato.com","phone":"55 71 1111 2222","website":"artesanatomali.com","image":"empresa3.webp","membership":3}
+    {"name":"Empresa do Deserto","tagline":"Turismo e Aventura","email":"info@gmail.com","phone":"55 11 1234 5678","website":"minhaempresa.com","image":"empresa1.webp","membership":3},
+    {"name":"Café de São Paulo","tagline":"Café e Gastronomia","email":"contato@cafe.com","phone":"55 11 9876 5432","website":"cafetimbuktu.com","image":"empresa2.webp","membership":2},
+    {"name":"Artesanato Mali","tagline":"Arte Local","email":"ola@artesanato.com","phone":"55 11 1111 2222","website":"artesanatomali.com","image":"empresa3.webp","membership":3},
+    {"name":"Lippert Advogados","tagline":"Advocacia Tributária","email":"lippert@lippert.com","phone":"55 11 1111 2221","website":"www.lippert.com.br","image":"empresa4.webp","membership":2},
+    {"name":"Luft Transportes","tagline":"Transportes Rodoviários","email":"lufttransportes@lufttransportes.com","phone":"55 11 1111 2323","website":"www.lufttransportes.com.br","image":"empresa5.webp","membership":3},
+    {"name":"Kech do Brasil","tagline":"Engenharia Civil","email":"Keh@kechdobrsil.com","phone":"55 11 1111 2525","website":"www.kechdobrasil.com.br","image":"empresa6.webp","membership":2},
+    {"name":"Fornos Metalurgia","tagline":"Fornos industriais","email":"fornos@fornosmetalurgia.com","phone":"55 11 1111 2626","website":"www.fornosmetalurgia.com.br","image":"empresa7.webp","membership":3},
+    {"name":"Xavier e Farias Contabilidade","tagline":"Contabilidade","email":"xavierfarias@xavierfariascontabilidade.com","phone":"55 11 9594 1224","website":"www.xavierfarias.com.br","image":"empresa8.webp","membership":3},
+    {"name":"Luft Transportes","tagline":"Transportes Rodoviários","email":"lufttransportes@lufttransportes.com","phone":"55 11 3932 2728","website":"www.lufttransportes.com.br","image":"empresa9.webp","membership":2},
+    {"name":"Luft Transportes","tagline":"Transportes Rodoviários","email":"lufttransportes@lufttransportes.com","phone":"55 11 3945 1629","website":"www.lufttransportes.com.br","image":"empresa10.webp","membership":1},
+    {"name":"Luft Transportes","tagline":"Transportes Rodoviários","email":"lufttransportes@lufttransportes.com","phone":"55 11 3912 3237","website":"www.lufttransportes.com.br","image":"empresa11.webp","membership":1}
+    
   ]
+  
 }
