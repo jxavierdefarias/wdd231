@@ -96,3 +96,45 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
 
   #directory.grid-view { grid-template-columns: 1fr; }
 }
+/* CORRIGE LISTA NO CELULAR - EMPILHA TUDO */
+@media (max-width: 700px) {
+  #directory.list-view {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px;
+  }
+
+  #directory.list-view .member-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #directory.list-view .member-card img {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+
+  #directory.list-view .member-card h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    white-space: normal;
+  }
+
+  /* E-mail e site quebram, não empurram pra fora */
+  #directory.list-view .member-card p,
+  #directory.list-view .member-card a {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    margin: 0;
+  }
+}
