@@ -53,3 +53,8 @@ document.querySelector('#listBtn').addEventListener('click', () => {
   document.querySelector('#gridBtn').classList.remove('active');
 });
 
+const btn = document.getElementById('menuButton');
+const menu = document.getElementById('menuItems');
+btn.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});
