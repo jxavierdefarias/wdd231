@@ -49,13 +49,6 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
   .info-grid,.spotlights,footer{grid-template-columns:1fr}
 }
 
-
-
-#menuItems { display: flex; gap: 20px; }
-#menuItems a { color: #fff; text-decoration: none; font-weight: 600; }
-#menuItems a.active { color: #d4a017; }
-
-
 .view-buttons { text-align: center; margin: 20px; }
 .view-buttons button { padding: 10px 20px; cursor: pointer; }
 .view-buttons button.active { background: #1a365d; color: #fff; }
@@ -137,20 +130,4 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
     max-width: 100%;
     margin: 0;
   }
-}
-#menuButton {
-  display: block;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-#menuItems {
-  display: none;
-}
-
-#menuItems.open {
-  display: flex;
-  flex-direction: column;
 }
