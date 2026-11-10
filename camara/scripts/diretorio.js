@@ -52,3 +52,4 @@ document.querySelector('#listBtn').addEventListener('click', () => {
   document.querySelector('#listBtn').classList.add('active');
   document.querySelector('#gridBtn').classList.remove('active');
 });
+
