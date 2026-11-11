@@ -27,7 +27,8 @@ async function loadMembers() {
         <img src="imagens/${m.image}" alt="${m.name}" loading="lazy" width="100" height="100">
         <h3>${m.name}</h3>
         <p>${m.tagline || ''}</p>
-        <p>EMAIL: ${m.email}<br>
+        <p>${m.address || ''}<br>
+EMAIL: ${m.email}<br>
         TELEFONE: ${m.phone}<br>
         SITE: <a href="https://${m.website}" target="_blank">${m.website}</a></p>
         <p><strong>Nível: ${m.membership === 3 ? 'Gold 🥇' : m.membership === 2 ? 'Silver 🥈' : 'Membro'}</strong></p>
