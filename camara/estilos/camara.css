@@ -60,7 +60,7 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
 }
 #directory.list-view { display: flex; flex-direction: column; gap: 10px; padding: 20px; }
 #directory.list-view .member-card { display: flex; gap: 15px; text-align: left; }
-#directory.list-view .member-card img { width: 80px; height: 80px; }
+#directory.list-view .member-card img { display:none !important; }
 
 .member-card {
   border: 1px solid #ddd; border-radius: 8px; padding: 15px;
