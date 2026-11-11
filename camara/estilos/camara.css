@@ -131,3 +131,12 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
     margin: 0;
   }
 }
+.member-card img {
+  aspect-ratio: 1 / 1;
+  width: 100px;
+  height: 100px;
+}
+
+#directory {
+  min-height: 400px;
+}

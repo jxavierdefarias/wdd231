@@ -1,4 +1,4 @@
-// 1. SANDUÍCHE
+
 const menuButton = document.querySelector('#menuButton');
 const menuItems = document.querySelector('#menuItems');
 
@@ -7,15 +7,15 @@ menuButton.addEventListener('click', () => {
   menuButton.textContent = menuItems.classList.contains('open') ? '✕' : '☰';
 });
 
-// 2. ANO E MODIFICAÇÃO
+
 document.querySelector('#year').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = document.lastModified;
 
-// 3. CARREGAR EMPRESAS - O CAMINHO CERTO
+
 async function loadMembers() {
   const container = document.querySelector('#directory');
   try {
-    // Como seu arquivo está em /camara/diretorio.html, o json tem que estar em /camara/dados/membros.json
+    
     const response = await fetch('dados/membros.json');
     if (!response.ok) throw new Error('Arquivo não encontrado: ' + response.status);
     
@@ -24,7 +24,7 @@ async function loadMembers() {
 
     container.innerHTML = members.map(m => `
       <div class="member-card">
-        <img src="imagens/${m.image}" alt="${m.name}" loading="lazy">
+        <img src="imagens/${m.image}" alt="${m.name}" loading="lazy" width="100" height="100">
         <h3>${m.name}</h3>
         <p>${m.tagline || ''}</p>
         <p>EMAIL: ${m.email}<br>
@@ -41,7 +41,6 @@ async function loadMembers() {
 }
 loadMembers();
 
-// 4. BOTÕES GRADE / LISTA
 document.querySelector('#gridBtn').addEventListener('click', () => {
   document.querySelector('#directory').className = 'grid-view';
   document.querySelector('#gridBtn').classList.add('active');
