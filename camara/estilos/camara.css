@@ -135,7 +135,6 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
   aspect-ratio: 1 / 1;
   width: 100px;
   height: 100px;
-  aspect-ratio: 1 /1;
   object-fit: cover;
   border-radius: 8px;
 }
