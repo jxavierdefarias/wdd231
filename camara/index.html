@@ -56,13 +56,13 @@
         <div class="card-body weather">
           <img id="weatherIcon" src="imagens/sun.svg" alt="Clima">
           <div>
-            <p class="temp"><span id="temp">22°</span> C</p>
-            <p id="desc">Parcialmente Nublado</p>
+            <p><span id="current-temp">22°C</span></p>
+            <p><span id="weather-desc">Parcialmente Nublado</span></p>
             <p>Máxima: <span id="max">24°C</span></p>
             <p>Mínima: <span id="min">19°C</span></p>
             <p>Umidade: <span id="humidity">34%</span></p>
-            <p>Nascer do Sol: <span>7:30</span></p>
-            <p>Pôr do Sol: <span>20:59</span></p>
+            <p>Nascer do Sol: <span id="sunrise">7:30</span></p>
+            <p>Pôr do Sol: <span id="sunset">20:59</span></p>
           </div>
         </div>
       </div>
@@ -70,9 +70,9 @@
       <div class="card">
         <h3>Previsão de Clima</h3>
         <div class="card-body forecast">
-          <p>Hoje: <strong>32°C</strong></p>
-          <p>Quarta-feira: <strong>31°C</strong></p>
-          <p>Sexta-feira: <strong>18°C</strong></p>
+          <p>Hoje: <strong><span id="forecast-today">32°C</span></strong></p>
+          <p>Quarta-feira: <strong><span id="forecast-day2">31°C</span></strong></p>
+          <p>Sexta-feira: <strong><span id="forecast-day4">18°C</span></strong></p>
         </div>
       </div>
     </section>
