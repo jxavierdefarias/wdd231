@@ -49,7 +49,7 @@
         <h3>Eventos</h3>
         <div class="card-body">
           <h4>Feira de Negócios de São Paulo</h4>
-          <p>📅 Sábado, 15 de Novembro - 10h<br>
+          <p>📅 Sábado, 21 de Novembro - 10h<br>
           📍 Itaim Bibi - Av.Faria Lima<br>
           Venha conhecer empresas locais, gastronomia e artesanato.</p>
           <a href="#">Ver todos os eventos →</a>
@@ -75,15 +75,17 @@
       <div class="card">
         <h3>Previsão de Clima</h3>
         <div class="card-body forecast">
-          <p>Hoje: <strong><span id="forecast-today">32°C</span></strong></p>
-          <p>Quarta-feira: <strong><span id="forecast-day2">31°C</span></strong></p>
-          <p>Sexta-feira: <strong><span id="forecast-day4">18°C</span></strong></p>
+          <p>Hoje: <span id="forecast-today"></span></p>
+          <p>Amanhã: <span id="forecast-day1"></span></p>
+          <p>Depois de Amanhã: <span id="forecast-day2"></span></p>
         </div>
       </div>
     </section>
 
-    <!-- EMPRESAS DESTAQUE - vem do members.json via JS -->
-    <div id="spotlights" class="spotlights"></div>
+    <section class="spotlights">
+      <h2>Destaques de Empresas</h2>
+      <div id="spotlight-container"></div>
+    </section>
   </main>
 
   <footer>
@@ -107,4 +109,3 @@
   <script src="scripts/camara.js"></script>
 </body>
 </html>
-

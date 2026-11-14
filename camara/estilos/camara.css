@@ -89,7 +89,7 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
 
   #directory.grid-view { grid-template-columns: 1fr; }
 }
-/* CORRIGE LISTA NO CELULAR - EMPILHA TUDO */
+
 @media (max-width: 700px) {
   #directory.list-view {
     display: flex !important;
@@ -122,7 +122,7 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
     white-space: normal;
   }
 
-  /* E-mail e site quebram, não empurram pra fora */
+  
   #directory.list-view .member-card p,
   #directory.list-view .member-card a {
     word-break: break-word;
@@ -141,4 +141,155 @@ body.dark .card, body.dark .spotlight{background:#222;color:#eee}
 
 #directory {
   min-height: 400px;
+}
+ 
+.spotlights {
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.spotlights h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  white-space: nowrap; 
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.spotlight {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.spotlight img {
+  width: 100%;
+  max-width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 0.8rem;
+  display: block;
+}
+
+.spotlight h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.spotlight p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0.3rem 0;
+}
+
+.spotlight .level {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background: gold;
+  color: #000;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+
+@media (max-width: 700px) {
+  #spotlight-container {
+    grid-template-columns: 1fr;
+  }
+  .spotlights h2 {
+    white-space: normal;
+  }
+}
+.info-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.info-grid .card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 0; 
+  overflow: hidden;
+}
+
+.info-grid .card h3 {
+  text-align: center;
+  background: #1a4d8f;
+  color: white;
+  margin: -1rem -1rem 1rem -1rem;
+  padding: 0.8rem;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.1rem;
+}
+
+.info-grid .card-body {
+  padding: 0.5rem;
+}
+
+.info-grid .card-body.weather {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.info-grid .card-body.weather img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.info-grid .card-body p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+}
+
+@media (max-width: 800px) {
+  .info-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.spotlights {
+  display: block !important;
+  text-align: center;
+}
+
+.spotlights h2 {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  grid-column: auto !important;
+  margin-bottom: 1.5rem !important;
+  white-space: normal !important;
+}
+
+#spotlight-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem;
+  text-align: center;
 }
