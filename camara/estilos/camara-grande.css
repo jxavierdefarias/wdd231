@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   header {
     padding: 15px 40px;
   }
@@ -15,5 +15,23 @@
   main {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  /* Layout da página Associar-se - form na esquerda, cards na direita */
+  .join-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .join-layout h1 {
+    grid-column: 1 / -1;
+  }
+
+  .membership-cards {
+    display: grid;
+    gap: 1rem;
+    margin-top: 0;
   }
 }
