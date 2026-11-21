@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associe-se | Câmara de Comércio de São Paulo</title>
+    <meta name="description" content="Câmara de Comércio de São paulo - Conectando empresas, eventos e oportunidades.">
+  <meta name="author" content="Jorge Farias">
+  <meta property="og:title" content="Câmara de Comércio de São Paulo - Negócios e Eventos">
+  <meta property="og:description" content="Conecte sua empresa à Câmara de Comércio de São Paulo. Encontre parceiros, eventos e oportunidades para crescer.">
+  <meta property="og:image" content="https://jxavierdefarias.github.io/wdd231/camara/imagens/hero.jpg">
+  <meta property="og:url" content="https://jxavierdefarias.github.io/wdd231/camara/index.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="imagens/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/camara.css">
+  <link rel="stylesheet" href="estilos/camara-grande.css">
+</head>
+<body>
+     <header>
+    <div class="logo">
+      <img src="imagens/logo.webp" alt="Logo Sao Paulo">
+      <div><h1>São Paulo</h1><p>Câmara de Comércio</p></div>
+    </div>
+    <button id="menuButton" aria-label="Abrir menu">☰</button>
+    <nav id="menuItems">
+      <a href="index.html" class="active">Início</a>
+      <a href="diretorio.html">Diretório</a>
+      <a href="associacao.html">Associar-se</a>
+      <a href="discover.html">Descobrir</a>
+      <button id="darkBtn" aria-label="Modo escuro">◐</button>
+    </nav>
+  </header>
+<main class="join-layout">
+    <h1>Junte-se à Câmara</h1>
+
+    <!-- FORMULÁRIO -->
+    <form method="get" action="agradecimento.html" class="join-form">
+      
+      <label>Nome do Candidato*
+        <input type="text" name="first-name" title="Digite seu primeiro nome" autocomplete="given-name" required>
+      </label>
+
+      <label>Sobrenome do Candidato*
+        <input type="text" name="last-name" title="Digite seu sobrenome" autocomplete="family-name" required>
+      </label>
+
+      <label>Cargo na Organização
+        <input type="text" name="org-title" title="Seu cargo, mínimo 7 caracteres, só letras, hífen e espaço" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}">
+      </label>
+
+      <label>E-mail*
+        <input type="email" name="email" title="Digite seu e-mail" autocomplete="email" placeholder="exemplo@email.com" required>
+      </label>
+
+      <label>Celular*
+        <input type="tel" name="phone" title="Digite seu celular" autocomplete="tel" required>
+      </label>
+
+      <label>Nome da Empresa/Organização*
+        <input type="text" name="organization" title="Nome da sua empresa" autocomplete="organization" required>
+      </label>
+
+      <fieldset>
+        <legend>Nível de Associação</legend>
+        <label><input type="radio" name="membership" value="np" required> Associação NP - Sem fins lucrativos, sem taxa</label>
+        <label><input type="radio" name="membership" value="bronze"> Associação Bronze</label>
+        <label><input type="radio" name="membership" value="silver"> Associação Prata</label>
+        <label><input type="radio" name="membership" value="gold"> Associação Ouro</label>
+      </fieldset>
+
+      <label>Descrição da Atividade/Organização
+        <textarea name="description" title="Descreva sua empresa/atividade" rows="5"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Enviar Pedido de Associação">
+    </form>
+    <aside class="membership-cards">
+      <section class="card np-card">
+        <h2>Associação NP</h2>
+        <p>Ideal para ONGs</p>
+        <p><strong>Grátis</strong></p>
+        <button class="open-modal" data-modal="modal-np">Mais Informações</button>
+      </section>
+
+      <section class="card bronze-card">
+        <h2>Associação Bronze</h2>
+        <p>Para quem está começando</p>
+        <p><strong>R$ 100 / ano</strong></p>
+        <button class="open-modal" data-modal="modal-bronze">Mais Informações</button>
+      </section>
+
+      <section class="card silver-card">
+        <h2>Associação Prata</h2>
+        <p>Mais visibilidade</p>
+        <p><strong>R$ 250 / ano</strong></p>
+        <button class="open-modal" data-modal="modal-silver">Mais Informações</button>
+      </section>
+
+      <section class="card gold-card">
+        <h2>Associação Ouro</h2>
+        <p>Máximo benefício</p>
+        <p><strong>R$ 500 / ano</strong></p>
+        <button class="open-modal" data-modal="modal-gold">Mais Informações</button>
+      </section>
+    </aside>+++++++++++++++++++++++++++++++++++++++++
+</body>
+</html>
