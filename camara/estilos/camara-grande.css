@@ -17,7 +17,7 @@
     margin: 0 auto;
   }
 
-  /* Layout da página Associar-se - form na esquerda, cards na direita */
+  
   .join-layout {
     display: grid;
     grid-template-columns: 1fr 380px;

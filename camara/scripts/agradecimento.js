@@ -1,4 +1,4 @@
-// Pega os dados que vieram do formulário via GET
+
 const params = new URLSearchParams(window.location.search);
 const results = document.getElementById('results');
 

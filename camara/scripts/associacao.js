@@ -1,10 +1,10 @@
-// Timestamp
+
 const timestampField = document.getElementById('timestamp');
 if (timestampField) {
   timestampField.value = new Date().toLocaleString('pt-BR');
 }
 
-// Abre os modais
+
 document.querySelectorAll('.open-modal').forEach(btn => {
   btn.addEventListener('click', () => {
     const modal = document.getElementById(btn.dataset.modal);
@@ -12,14 +12,14 @@ document.querySelectorAll('.open-modal').forEach(btn => {
   });
 });
 
-// Fecha os modais
+
 document.querySelectorAll('.close-modal').forEach(btn => {
   btn.addEventListener('click', () => {
     btn.closest('dialog').close();
   });
 });
 
-// Menu mobile
+
 const menuButton = document.getElementById('menuButton');
 const menuItems = document.getElementById('menuItems');
 if (menuButton && menuItems) {
@@ -28,7 +28,7 @@ if (menuButton && menuItems) {
   });
 }
 
-// Modo escuro
+
 const darkBtn = document.getElementById('darkBtn');
 if (darkBtn) {
   darkBtn.addEventListener('click', () => {
@@ -36,7 +36,7 @@ if (darkBtn) {
   });
 }
 
-// Ano e última modificação
+
 const yearSpan = document.getElementById('year');
 if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
