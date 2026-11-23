@@ -15,3 +15,5 @@ if (results) {
     show('Empresa', 'organization') +
     show('Data/Hora', 'timestamp');
 }
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = document.lastModified;
