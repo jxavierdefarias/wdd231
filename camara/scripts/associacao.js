@@ -42,3 +42,9 @@ if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
 const lastSpan = document.getElementById('lastModified');
 if (lastSpan) lastSpan.textContent = document.lastModified;
+
+const cargo = document.querySelector('input[name="org-title"]');
+if (cargo) cargo.setAttribute('autocomplete', 'cargo-na-organizacao');
+
+const org = document.querySelector('input[name="organization"]');
+if (org) org.setAttribute('autocomplete', 'organizacao');
