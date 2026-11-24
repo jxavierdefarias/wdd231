@@ -64,3 +64,11 @@ async function loadWeather() {
   } catch (e) { console.log("Erro clima:", e); }
 }
 loadWeather();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cargo = document.querySelector('input[name="org-title"]');
+  if (cargo) cargo.setAttribute('autocomplete', 'cargo-na-organizacao');
+
+  const org = document.querySelector('input[name="organization"]');
+  if (org) org.setAttribute('autocomplete', 'organizacao');
+});
