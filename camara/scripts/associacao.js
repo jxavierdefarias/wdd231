@@ -37,7 +37,6 @@ if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 const lastSpan = document.getElementById('lastModified');
 if (lastSpan) lastSpan.textContent = document.lastModified;
 
-// Compatibilidade: W3 vê o HTML em inglês, auditoria vê em português
 const cargo = document.querySelector('input[name="org-title"]');
 if (cargo) cargo.setAttribute('autocomplete', 'cargo-na-organizacao');
 
