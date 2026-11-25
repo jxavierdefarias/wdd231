@@ -1,0 +1,71 @@
+
+.visita{
+  background:#C9A227;color:#0B2C4A;
+  padding:1rem;text-align:center;
+  font-weight:700;border-radius:8px;margin:1rem 0;
+}
+.demografia{background:#fff;padding:1rem;border-radius:10px;margin-bottom:1rem}
+.galeria{display:grid;gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:10px;border:1px solid #ddd}
+.card figure{margin:0}
+.card img{width:100%;height:auto;border-radius:8px;transition:transform .3s, filter .3s, box-shadow .3s}
+.card address{font-style:normal;color:#555;font-size:.9rem;margin:.5rem 0}
+.card button{width:100%;padding:.6rem;background:#0B2C4A;color:#fff;border:none;border-radius:6px;cursor:pointer}
+dialog{border:none;border-radius:10px;max-width:500px;width:90%}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+
+
+@media (min-width:320px) and (max-width:640px){
+  .galeria{
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+  }
+}
+
+
+@media (min-width:641px) and (max-width:1024px){
+  .galeria{
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+@media (min-width:1025px){
+  .galeria{
+    grid-template-columns:repeat(4,1fr);
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+  }
+}
+
+
+.card-1{grid-area:card1}
+.card-2{grid-area:card2}
+.card-3{grid-area:card3}
+.card-4{grid-area:card4}
+.card-5{grid-area:card5}
+.card-6{grid-area:card6}
+.card-7{grid-area:card7}
+.card-8{grid-area:card8}
+
+
+@media (hover:hover) and (min-width:1025px){
+  .card img:hover{
+    transform:scale(1.05);
+    filter:brightness(1.1) contrast(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+  }
+}
