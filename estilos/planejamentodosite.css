@@ -1,0 +1,41 @@
+:root {
+  --grafite: #1F2937;
+  --laranja: #F97316;
+  --bege: #F8F4EC;
+  --texto: #222222;
+  --branco: #FFFFFF;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: var(--bege);
+  color: var(--texto);
+  margin: 0;
+  line-height: 1.6;
+}
+
+header, footer {
+  background: var(--grafite);
+  color: var(--branco);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--grafite); }
+header h1, header p { color: var(--branco); }
+header p { color: var(--laranja); font-weight: 700; }
+
+main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+section { background: var(--branco); padding: 1.2rem; margin-bottom: 1rem; border-left: 5px solid var(--laranja); border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ccc; padding: .6rem; text-align: left; }
+th { background: var(--grafite); color: var(--branco); }
+.swatch.grafite { background: #1F2937; color: #fff; }
+.swatch.laranja { background: #F97316; color: #fff; }
+.swatch.bege { background: #F8F4EC; }
+.swatch.texto { background: #222222; color: #fff; }
+.swatch.branco { background: #fff; }
+.exemplo-titulo { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.4rem; color: var(--grafite); }
+.exemplo-corpo { font-family: 'Open Sans', sans-serif; }
+figure img { width: 100%; max-width: 600px; border: 2px solid #222; display: block; margin: 0 auto; }
+figcaption { text-align: center; font-size: .9rem; margin-top: .5rem; }

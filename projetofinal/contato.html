@@ -1,0 +1,22 @@
+<main>
+  <h1>Peça seu Orçamento</h1>
+  <form method="get" action="agradecimento.html">
+    <label>Nome* <input type="text" name="nome" title="Seu nome" autocomplete="given-name" required></label>
+    <label>E-mail* <input type="email" name="email" title="Seu e-mail" autocomplete="email" required></label>
+    <label>Celular* <input type="tel" name="phone" title="Seu celular" autocomplete="tel" required></label>
+    <label>Empresa <input type="text" name="organization" title="Nome da empresa" autocomplete="organization"></label>
+    <label>Tipo de Cabide
+      <select name="tipo" title="Tipo de cabide">
+        <option value="madeira">Madeira</option>
+        <option value="veludo">Veludo</option>
+        <option value="plastico">Plástico</option>
+        <option value="metal">Metal</option>
+        <option value="infantil">Infantil</option>
+      </select>
+    </label>
+    <label>Quantidade* <input type="number" name="quantidade" title="Quantidade" min="1" required></label>
+    <label>Mensagem <textarea name="mensagem" title="Detalhes do pedido" rows="4"></textarea></label>
+    <input type="hidden" name="timestamp" id="timestamp">
+    <button type="submit">Enviar Orçamento</button>
+  </form>
+</main>

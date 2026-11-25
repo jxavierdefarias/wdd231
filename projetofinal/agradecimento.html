@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AXFstore | Fabricante de Cabides com Preço de Fábrica</title>
+<meta name="description" content="AXFstore - Fabricante de cabides de madeira, veludo, plástico e metal. Atacado e varejo com preço de fábrica e personalização com logo.">
+<meta name="author" content="Jorge Farias">
+<meta property="og:title" content="AXFstore - Fabricante de Cabides">
+<meta property="og:description" content="Cabides de madeira, veludo, plástico e metal com preço de fábrica. Atacado e personalizados.">
+<meta property="og:image" content="https://jxavierdefarias.github.io/wdd231/axfstore/imagens/hero-cabides.webp">
+<meta property="og:url" content="https://jxavierdefarias.github.io/wdd231/axfstore/index.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="imagens/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos/axf.css">
+<link rel="stylesheet" href="estilos/axf-grande.css">
+<script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="imagens/favicon.png" alt="Logo AXFstore" width="40" height="40">
+    <div><p class="logo-title">AXFstore</p><p>Fabricante de Cabides</p></div>
+  </div>
+  <button id="menuButton" aria-label="Abrir menu">☰</button>
+  <nav id="menuItems">
+    <a href="index.html" class="active">Início</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="contato.html">Orçamento</a>
+    <span id="cartCount">🛒 Carrinho: <strong>0</strong></span>
+  </nav>
+</header>
+<main>
+  <h1>Peça seu Orçamento</h1>
+  <form method="get" action="agradecimento.html">
+    <label>Nome* <input type="text" name="nome" title="Seu nome" autocomplete="given-name" required></label>
+    <label>E-mail* <input type="email" name="email" title="Seu e-mail" autocomplete="email" required></label>
+    <label>Celular* <input type="tel" name="phone" title="Seu celular" autocomplete="tel" required></label>
+    <label>Empresa <input type="text" name="organization" title="Nome da empresa" autocomplete="organization"></label>
+    <label>Tipo de Cabide
+      <select name="tipo" title="Tipo de cabide">
+        <option value="madeira">Madeira</option>
+        <option value="veludo">Veludo</option>
+        <option value="plastico">Plástico</option>
+        <option value="metal">Metal</option>
+        <option value="infantil">Infantil</option>
+      </select>
+    </label>
+    <label>Quantidade* <input type="number" name="quantidade" title="Quantidade" min="1" required></label>
+    <label>Mensagem <textarea name="mensagem" title="Detalhes do pedido" rows="4"></textarea></label>
+    <input type="hidden" name="timestamp" id="timestamp">
+    <button type="submit">Enviar Orçamento</button>
+  </form>
+</main>
+
+<footer>
+  <div><strong>AXFstore</strong><br>Av. Paulista, 1000 - São Paulo, SP<br>contato@axfstore.com.br<br>(11) 99999-0000</div>
+  <div>Projeto WDD231<br>Jorge Farias © <span id="year"></span><br>Última Modificação: <span id="lastModified"></span></div>
+</footer>
+</body>
+</html>

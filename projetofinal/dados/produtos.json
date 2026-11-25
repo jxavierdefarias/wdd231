@@ -1,0 +1,17 @@
+[
+  {"id":1,"nome":"Cabide de Madeira Premium","categoria":"Madeira","preco":12.90,"material":"Madeira de pinus","imagem":"imagens/cabide-madeira.webp","descricao":"Ideal para ternos e casacos, não deforma."},
+  {"id":2,"nome":"Cabide de Veludo Antiderrapante","categoria":"Veludo","preco":4.90,"material":"Veludo + metal","imagem":"imagens/cabide-veludo.webp","descricao":"Não deixa a roupa escorregar, fino e resistente."},
+  {"id":3,"nome":"Cabide de Plástico Reforçado","categoria":"Plástico","preco":1.90,"material":"Plástico PP","imagem":"imagens/cabide-plastico.webp","descricao":"Leve e barato para atacado e lavanderias."},
+  {"id":4,"nome":"Cabide de Metal Cromado","categoria":"Metal","preco":3.50,"material":"Metal cromado","imagem":"imagens/cabide-metal.webp","descricao":"Fino, forte e elegante para lojas."},
+  {"id":5,"nome":"Cabide Infantil Colorido","categoria":"Infantil","preco":2.50,"material":"Plástico","imagem":"imagens/cabide-infantil.webp","descricao":"Tamanho ideal para roupas de criança."},
+  {"id":6,"nome":"Cabide para Calça com Presilha","categoria":"Veludo","preco":5.90,"material":"Veludo + presilha","imagem":"imagens/cabide-calca.webp","descricao":"Presilha firme, não marca a calça."},
+  {"id":7,"nome":"Cabide para Terno com Ombro Largo","categoria":"Madeira","preco":15.90,"material":"Madeira nobre","imagem":"imagens/cabide-terno.webp","descricao":"Ombro largo preserva o caimento do terno."},
+  {"id":8,"nome":"Cabide de Arame para Lavanderia","categoria":"Metal","preco":0.90,"material":"Arame galvanizado","imagem":"imagens/cabide-arame.webp","descricao":"O mais barato para grande volume."},
+  {"id":9,"nome":"Cabide com Gancho Giratório","categoria":"Metal","preco":4.20,"material":"Metal + plástico","imagem":"imagens/cabide-gancho.webp","descricao":"Gancho 360° facilita organizar."},
+  {"id":10,"nome":"Cabide de Madeira com Logo","categoria":"Madeira","preco":18.90,"material":"Madeira + gravação","imagem":"imagens/cabide-logo.webp","descricao":"Personalizado com o logo da sua loja."},
+  {"id":11,"nome":"Cabide para Vestido com Alça","categoria":"Veludo","preco":6.50,"material":"Veludo","imagem":"imagens/cabide-vestido.webp","descricao":"Entalhe para alça, não deixa cair."},
+  {"id":12,"nome":"Cabide para Saia com Presilha","categoria":"Plástico","preco":3.90,"material":"Plástico","imagem":"imagens/cabide-saia.webp","descricao":"Presilha ajustável para saias."},
+  {"id":13,"nome":"Cabide Duplo 2 em 1","categoria":"Metal","preco":7.90,"material":"Metal","imagem":"imagens/cabide-duplo.webp","descricao":"2 peças em 1, economiza espaço."},
+  {"id":14,"nome":"Cabide Infantil de Madeira","categoria":"Infantil","preco":8.90,"material":"Madeira","imagem":"imagens/cabide-infantil-madeira.webp","descricao":"Resistente e bonito para quarto infantil."},
+  {"id":15,"nome":"Kit 10 Cabides de Veludo","categoria":"Veludo","preco":39.90,"material":"Veludo","imagem":"imagens/kit-veludo.webp","descricao":"Kit para organizar o guarda-roupa inteiro."}
+]

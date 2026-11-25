@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AXFstore | Fabricante de Cabides com Preço de Fábrica</title>
+<meta name="description" content="AXFstore - Fabricante de cabides de madeira, veludo, plástico e metal. Atacado e varejo com preço de fábrica e personalização com logo.">
+<meta name="author" content="Jorge Farias">
+<meta property="og:title" content="AXFstore - Fabricante de Cabides">
+<meta property="og:description" content="Cabides de madeira, veludo, plástico e metal com preço de fábrica. Atacado e personalizados.">
+<meta property="og:image" content="https://jxavierdefarias.github.io/wdd231/axfstore/imagens/hero-cabides.webp">
+<meta property="og:url" content="https://jxavierdefarias.github.io/wdd231/axfstore/index.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="imagens/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos/axf.css">
+<link rel="stylesheet" href="estilos/axf-grande.css">
+<script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="imagens/favicon.png" alt="Logo AXFstore" width="40" height="40">
+    <div><p class="logo-title">AXFstore</p><p>Fabricante de Cabides</p></div>
+  </div>
+  <button id="menuButton" aria-label="Abrir menu">☰</button>
+  <nav id="menuItems">
+    <a href="index.html" class="active">Início</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="contato.html">Orçamento</a>
+    <span id="cartCount">🛒 Carrinho: <strong>0</strong></span>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Cabides com preço de fábrica</h1>
+    <p>Madeira, veludo, plástico e metal. Atacado para lojas e varejo para sua casa.</p>
+    <a class="btn" href="catalogo.html">Ver Catálogo</a>
+    <a class="btn btn-outline" href="contato.html">Pedir Orçamento</a>
+    <img src="imagens/hero-cabides.webp" alt="Cabides de madeira e veludo da AXFstore" width="800" height="400" loading="lazy">
+  </section>
+
+  <section>
+    <h2>Categorias</h2>
+    <div class="filtros">
+      <button data-filtro="Todos" class="filtro active">Todos</button>
+      <button data-filtro="Madeira" class="filtro">Madeira</button>
+      <button data-filtro="Veludo" class="filtro">Veludo</button>
+      <button data-filtro="Plástico" class="filtro">Plástico</button>
+      <button data-filtro="Metal" class="filtro">Metal</button>
+      <button data-filtro="Infantil" class="filtro">Infantil</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Produtos em Destaque - 15 produtos</h2>
+    <p id="totalProdutos">Carregando produtos...</p>
+    <div id="lista-produtos" class="grade-produtos"></div>
+  </section>
+
+  <section class="vantagens">
+    <h2>Por que comprar da fábrica?</h2>
+    <ul>
+      <li>✅ Preço de fábrica, sem intermediário</li>
+      <li>✅ Personalização com logo da sua loja</li>
+      <li>✅ Pedido mínimo de atacado: 100 unidades</li>
+      <li>✅ Envio para todo o Brasil</li>
+    </ul>
+  </section>
+
+  <dialog id="modal-produto">
+    <button class="close-modal" aria-label="Fechar">❌</button>
+    <div id="modal-conteudo"></div>
+  </dialog>
+</main>
+
+<footer>
+  <div><strong>AXFstore</strong><br>Av. Paulista, 1000 - São Paulo, SP<br>contato@axfstore.com.br<br>(11) 99999-0000</div>
+  <div>Projeto WDD231<br>Jorge Farias © <span id="year"></span><br>Última Modificação: <span id="lastModified"></span></div>
+</footer>
+</body>
+</html>

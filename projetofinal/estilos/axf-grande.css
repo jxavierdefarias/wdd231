@@ -1,0 +1,6 @@
+@media (min-width: 700px){
+  #menuButton{display:none}
+  nav{display:flex !important;width:auto;flex-direction:row;align-items:center;margin:0;gap:1rem}
+  .grade-produtos{grid-template-columns:repeat(3,1fr)}
+  footer{display:flex;justify-content:space-between;text-align:left}
+}
